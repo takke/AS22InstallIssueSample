@@ -2,21 +2,13 @@
 
 buildscript {
     repositories {
-        // for com.viewpagerindicator
-        maven { url "http://dl.bintray.com/populov/maven" }
-
-        mavenCentral()
-
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.0'
 
         // Realm
-        classpath 'io.realm:realm-gradle-plugin:2.0.0'
-
-        // Firebase
-        classpath 'com.google.gms:google-services:3.0.0'
+        classpath 'io.realm:realm-gradle-plugin:2.0.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -37,7 +29,7 @@ ext {
     versionCode = 2
     versionName = '1.0'
 
-    compileSdkVersion = 23
+    compileSdkVersion = 24
     buildToolsVersion = '24.0.3'
     targetSdkVersion = 16
     minSdkVersion = 16
